@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <select name="Province" id="Province">
+        </select>
+        <select name="City" id="City">
+        </select>
+        <select name="Area" id="Area">
+        </select>
+    </div>
+
+    <div>
+        <select name="a" id="a">
+        </select>
+        <select name="b" id="b">
+        </select>
+        <select name="c" id="c">
+        </select>
+    </div>
+
+
+    <script src="city.js"></script>
+    <script src="Xlinkage.js"></script>
+    <script>
+        window.onload = function () {
+            var a = new linkage('Province', 'City', 'Area')
+            var b = new linkage('a', 'b', 'c')
+        }
+    </script>
+</body>
+
+</html>
